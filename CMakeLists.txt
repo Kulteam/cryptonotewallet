@@ -35,8 +35,8 @@ include_directories(${Boost_INCLUDE_DIRS})
 link_directories(${Boost_LIBRARY_DIRS})
 
 set(VERSION "")
-configure_file("cryptonote/src/version.h.in" "version.h")
-configure_file("src/CryptoNoteWalletConfig.h.in" "CryptoNoteWalletConfig.h")
+configure_file("cryptonote/src/config/version.h.in" "version.h")
+configure_file("src/config/WalletConfig.h" "CryptoNoteWalletConfig.h")
 
 add_definitions(-DGIT_REVISION=\"${GIT_REVISION}\")
 
@@ -54,7 +54,7 @@ set(CRYPTONOTE_SOURCES
   cryptonote/external/miniupnpc/upnpcommands.c
   cryptonote/external/miniupnpc/upnpreplyparse.c
   cryptonote/src/Common/Base58.cpp
-  cryptonote/src/Common/CommandLine.cpp
+  cryptonote/src/Common/CommandLine.cpp //1
   cryptonote/src/Common/Util.cpp
   cryptonote/src/Common/StringTools.cpp
   cryptonote/src/Common/JsonValue.cpp
@@ -68,7 +68,7 @@ set(CRYPTONOTE_SOURCES
   cryptonote/src/Common/StringView.cpp
   cryptonote/src/Common/VectorOutputStream.cpp
   cryptonote/src/crypto/blake256.c
-  cryptonote/src/crypto/chacha8.c
+  cryptonote/src/crypto/chacha8.cpp
   cryptonote/src/crypto/crypto-ops-data.c
   cryptonote/src/crypto/crypto-ops.c
   cryptonote/src/crypto/crypto.cpp
@@ -84,7 +84,7 @@ set(CRYPTONOTE_SOURCES
   cryptonote/src/crypto/random.c
   cryptonote/src/crypto/skein.c
   cryptonote/src/crypto/slow-hash.c
-  cryptonote/src/crypto/slow-hash.cpp
+  cryptonote/src/crypto/slow-hash.cpp //2
   cryptonote/src/crypto/tree-hash.c
   cryptonote/src/CryptoNoteCore/BlockchainIndices.cpp
   cryptonote/src/CryptoNoteCore/BlockchainMessages.cpp
