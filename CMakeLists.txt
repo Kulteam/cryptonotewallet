@@ -86,31 +86,31 @@ set(CRYPTONOTE_SOURCES
   cryptonote/src/crypto/slow-hash.c
   cryptonote/src/crypto/slow-hash.cpp //2
   cryptonote/src/crypto/tree-hash.c
-  cryptonote/src/CryptoNoteCore/BlockchainIndices.cpp
+  cryptonote/src/CryptoNoteCore/BlockchainIndices.cpp //3
   cryptonote/src/CryptoNoteCore/BlockchainMessages.cpp
-  cryptonote/src/CryptoNoteCore/BlockIndex.cpp
-  cryptonote/src/CryptoNoteCore/CoreConfig.cpp
-  cryptonote/src/CryptoNoteCore/CryptoNoteBasic.cpp
+  cryptonote/src/CryptoNoteCore/BlockIndex.cpp  //4
+  cryptonote/src/CryptoNoteCore/CoreConfig.cpp //5
+  cryptonote/src/CryptoNoteCore/CryptoNoteBasic.cpp 
   cryptonote/src/CryptoNoteCore/CryptoNoteTools.cpp
   cryptonote/src/CryptoNoteCore/Currency.cpp
-  cryptonote/src/CryptoNoteCore/MinerConfig.cpp
+  cryptonote/src/CryptoNoteCore/MinerConfig.cpp //6
   cryptonote/src/CryptoNoteCore/Transaction.cpp
   cryptonote/src/CryptoNoteCore/Account.cpp
-  cryptonote/src/CryptoNoteCore/Blockchain.cpp
+  cryptonote/src/CryptoNoteCore/Blockchain.cpp  //7
   cryptonote/src/CryptoNoteCore/Checkpoints.cpp
   cryptonote/src/CryptoNoteCore/CryptoNoteBasicImpl.cpp
   cryptonote/src/CryptoNoteCore/Core.cpp
   cryptonote/src/CryptoNoteCore/CryptoNoteFormatUtils.cpp
   cryptonote/src/CryptoNoteCore/CryptoNoteSerialization.cpp
   cryptonote/src/CryptoNoteCore/Difficulty.cpp
-  cryptonote/src/CryptoNoteCore/IBlock.cpp
-  cryptonote/src/CryptoNoteCore/Miner.cpp
+  cryptonote/src/CryptoNoteCore/IBlock.cpp     //8
+  cryptonote/src/CryptoNoteCore/Miner.cpp  //9
   cryptonote/src/CryptoNoteCore/TransactionExtra.cpp
   cryptonote/src/CryptoNoteCore/TransactionPool.cpp
   cryptonote/src/CryptoNoteCore/TransactionPrefixImpl.cpp
   cryptonote/src/CryptoNoteCore/TransactionUtils.cpp
-  cryptonote/src/InProcessNode/InProcessNode.cpp
-  cryptonote/src/InProcessNode/InProcessNodeErrors.cpp
+  cryptonote/src/InProcessNode/InProcessNode.cpp     //10
+  cryptonote/src/InProcessNode/InProcessNodeErrors.cpp //11
   cryptonote/src/NodeRpcProxy/NodeErrors.cpp
   cryptonote/src/NodeRpcProxy/NodeRpcProxy.cpp
   cryptonote/src/P2p/NetNodeConfig.cpp
@@ -127,17 +127,17 @@ set(CRYPTONOTE_SOURCES
   cryptonote/src/Transfers/TransfersContainer.cpp
   cryptonote/src/Transfers/TransfersSubscription.cpp
   cryptonote/src/Transfers/TransfersSynchronizer.cpp
-  cryptonote/src/Wallet/LegacyKeysImporter.cpp
+  cryptonote/src/Wallet/LegacyKeysImporter.cpp   //12
   cryptonote/src/Wallet/WalletAsyncContextCounter.cpp
   cryptonote/src/Wallet/WalletErrors.cpp
-  cryptonote/src/WalletLegacy/KeysStorage.cpp
+  cryptonote/src/WalletLegacy/KeysStorage.cpp        //now
   cryptonote/src/WalletLegacy/WalletLegacy.cpp
   cryptonote/src/WalletLegacy/WalletHelper.cpp
   cryptonote/src/WalletLegacy/WalletLegacySerializer.cpp
   cryptonote/src/WalletLegacy/WalletLegacySerialization.cpp
   cryptonote/src/WalletLegacy/WalletTransactionSender.cpp
   cryptonote/src/WalletLegacy/WalletUnconfirmedTransactions.cpp
-  cryptonote/src/WalletLegacy/WalletUserTransactionsCache.cpp
+  cryptonote/src/WalletLegacy/WalletUserTransactionsCache.cpp     //end
   cryptonote/src/System/ContextGroup.cpp
   cryptonote/src/System/Event.cpp
   cryptonote/src/System/EventLock.cpp
@@ -165,7 +165,7 @@ set(CRYPTONOTE_SOURCES
   cryptonote/src/Logging/LoggerMessage.cpp
   cryptonote/src/Logging/LoggerRef.cpp
   cryptonote/src/BlockchainExplorer/BlockchainExplorer.cpp
-  cryptonote/src/BlockchainExplorer/BlockchainExplorerDataBuilder.cpp
+  cryptonote/src/BlockchainExplorer/BlockchainExplorerDataBuilder.cpp //13
   cryptonote/src/BlockchainExplorer/BlockchainExplorerErrors.cpp
 )
 
